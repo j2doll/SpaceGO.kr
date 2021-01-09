@@ -1,8 +1,12 @@
+// main.cpp
+
 #include <SFML/Graphics.hpp>
 #include <SFML/Audio.hpp>
+
 #include <Windows.h>
 #include <iostream>
 #include <thread>
+
 #include "Panel.h"
 #include "Splashscreen.h"
 #include "Menu.h"

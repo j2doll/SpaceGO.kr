@@ -1,5 +1,8 @@
+// SplashScreen.h 
+
 #include "Panel.h"
 #pragma once
+
 class Splashscreen : public Panel
 {
 private:

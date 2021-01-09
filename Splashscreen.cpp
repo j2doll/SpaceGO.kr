@@ -1,19 +1,20 @@
+
 #include "Splashscreen.h"
+
 #include <chrono>
 #include <iostream>
 #include <thread>
 #include <mutex>
+
 #include "Menu.h"
 
 Splashscreen::Splashscreen(MyWindow* window) : Panel(window) {
-
 
 	//Init textures
 	if (!shadow.loadFromFile("images/splashscreen/shadow.png")) {};
 	if (!logo.loadFromFile("images/splashscreen/logo.png")) {};
 	if (!button.loadFromFile("images/splashscreen/btn_keys.png")) {};
 	if (!buttonOff.create(button.getSize().x , button.getSize().y)) {};
-
 
 	//Init sprites
 	_shadow = sf::Sprite(shadow);
@@ -28,6 +29,7 @@ Splashscreen::Splashscreen(MyWindow* window) : Panel(window) {
 void Splashscreen::init()
 {	
 	getWindow()->clear();
+
 	//Draw sprites
 	getWindow()->draw(getBackground());
 	getWindow()->draw(_shadow);

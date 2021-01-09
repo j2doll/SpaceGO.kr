@@ -1,5 +1,9 @@
+// MyWindow.h
+
 #include <SFML/Graphics.hpp>
+
 #include "Config.h"
+
 #pragma once
 class MyWindow : public sf::RenderWindow
 {

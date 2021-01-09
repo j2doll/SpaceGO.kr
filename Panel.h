@@ -1,6 +1,9 @@
+// Panel.h
+
 #include <SFML/Graphics.hpp>
 #include "MyWindow.h"
 #include <iostream>
+
 #pragma once
 class Panel
 {
