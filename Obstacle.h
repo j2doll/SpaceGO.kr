@@ -1,5 +1,10 @@
+#ifndef Obstacle_H
+#define Obstacle_H
+
 #include <SFML/Graphics.hpp>
+
 #pragma once
+
 class Obstacle
 {
 protected:
@@ -25,3 +30,4 @@ public:
 	sf::Sprite getSprite() const;
 };
 
+#endif

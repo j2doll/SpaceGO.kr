@@ -1,7 +1,11 @@
+#ifndef Shop_H
+#define Shop_H
+
 #include "Panel.h"
 #include "MyButton.h"
 #include <sstream>
 #pragma once
+
 class Shop : public Panel
 {
 private:
@@ -23,3 +27,4 @@ public:
 	int getType() const;
 };
 
+#endif

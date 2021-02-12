@@ -1,11 +1,11 @@
 // main.cpp
 
-#include <SFML/Graphics.hpp>
-#include <SFML/Audio.hpp>
-
-#include <Windows.h>
 #include <iostream>
 #include <thread>
+
+
+#include <SFML/Graphics.hpp>
+#include <SFML/Audio.hpp>
 
 #include "Panel.h"
 #include "Splashscreen.h"
@@ -17,6 +17,9 @@
 #include "Account.h"
 #include "Credits.h"
 
+// #include <Windows.h>
+
+
 #pragma warning (disable : 4244)
 #pragma warning (disable : 4305)
 #pragma warning (disable : 4018)
@@ -25,11 +28,12 @@ int main()
 {
 	//Window variables
 	int ticks = 0;
-	FreeConsole(); //Hide console
+	// ::FreeConsole(); //Hide console
 
 	//Init window
 	MyWindow window(sf::VideoMode(1440, 810, 0), "SpaceGO", sf::Style::Close);
 	window.setFramerateLimit(60);
+
 	sf::Image image;
 	image.loadFromFile("images/icon.png");
 	window.setIcon(128,128, image.getPixelsPtr());

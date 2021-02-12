@@ -1,7 +1,11 @@
+#ifndef Account_H
+#define Account_H
+
 #include "Panel.h"
 #include "MyButton.h"
 #include <sstream>
 #pragma once
+
 class Account : public Panel
 {
 private:
@@ -24,3 +28,4 @@ public:
 	int getType() const;
 };
 
+#endif 

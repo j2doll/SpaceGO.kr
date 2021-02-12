@@ -1,5 +1,8 @@
 // SplashScreen.h 
 
+#ifndef Splashscreen_H
+#define Splashscreen_H
+
 #include "Panel.h"
 #pragma once
 
@@ -17,3 +20,4 @@ public:
 	int getType() const;
 };
 
+#endif

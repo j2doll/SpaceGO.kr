@@ -1,3 +1,6 @@
+#ifndef Game_H
+#define Game_H
+
 #include "Panel.h"
 #include "Laser.h"
 #include "Meteor.h"
@@ -43,3 +46,4 @@ public:
 	int getType() const;
 };
 
+#endif

@@ -1,6 +1,12 @@
+
+#ifndef Menu_H
+#define Menu_H
+
 #include "Panel.h"
 #include "MyButton.h"
+
 #include <SFML/Audio.hpp>
+
 #pragma once
 class Menu : public Panel
 {
@@ -17,3 +23,4 @@ public:
 	int getType()  const;
 };
 
+#endif 

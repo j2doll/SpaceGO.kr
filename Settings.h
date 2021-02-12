@@ -1,8 +1,12 @@
+#ifndef Settings_H
+#define Settings_H
+
 #include "Panel.h"
 #include "MyProgressBar.h"
 #include "MyCheckbox.h"
 #include "MyButton.h"
 #pragma once
+
 class Settings : public Panel
 {
 private:
@@ -24,3 +28,4 @@ public:
 	int getType() const;
 };
 
+#endif

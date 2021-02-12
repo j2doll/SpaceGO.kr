@@ -1,6 +1,10 @@
+#ifndef Credits_H
+#define Credits_H
+
 #include "Panel.h"
 #include "MyButton.h"
 #pragma once
+
 class Credits : public Panel
 {
 private:
@@ -19,3 +23,4 @@ public:
 	int getType() const;
 };
 
+#endif 

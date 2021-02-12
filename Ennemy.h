@@ -1,5 +1,10 @@
+#ifndef Ennemy_H
+#define Ennemy_H
+
 #include "Obstacle.h"
+
 #include <SFML/Graphics.hpp>
+
 #pragma once
 class Ennemy : public Obstacle
 {
@@ -12,3 +17,4 @@ public:
 	bool takeDamage();
 };
 
+#endif

@@ -1,5 +1,8 @@
 // Panel.h
 
+#ifndef Panel_H
+#define Panel_H
+
 #include <SFML/Graphics.hpp>
 #include "MyWindow.h"
 #include <iostream>
@@ -37,3 +40,4 @@ public:
 	sf::Sprite getBackground() const;
 };
 
+#endif

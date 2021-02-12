@@ -1,6 +1,10 @@
+#ifndef Score_H
+#define Score_H
+
 #include "Panel.h"
 #include "MyButton.h"
 #pragma once
+
 class Score : public Panel
 {
 private:
@@ -21,3 +25,5 @@ public:
 	//Getters
 	int getType() const;
 };
+
+#endif 
