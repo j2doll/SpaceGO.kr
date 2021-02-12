@@ -18,10 +18,10 @@
    
    - 참조
    
-   * Visual C++ 12 : Visual C++ 2013
-   * Visual C++ 14 : Visual C++ 2015
-   * Visual C++ 15 : Visual C++ 2017
-   * Visual C++ 19 : Visual C++ 2019
+     * Visual C++ 12 : Visual C++ 2013
+     * Visual C++ 14 : Visual C++ 2015
+     * Visual C++ 15 : Visual C++ 2017
+     * Visual C++ 19 : Visual C++ 2019
     
  - 다음과 같이 환경설정 값을 '시스템 환경 변수 편집'에 입력한다.
  
