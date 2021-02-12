@@ -1,57 +1,41 @@
-# SpaceGO using C++ & SFML
+# SpaceGo.kr
 
-![Screenshot](https://github.com/Fromont-Sam/SpaceGO/blob/master/doc/screenshot0.PNG?raw=true)
+> This document is written in Korean. 
 
-# Introduction
-Watch the demo video on YouTube by clicking the image below :
+- 원본 코드 : https://github.com/Fromont-Sam/SpaceGO
 
-[![Watch the video](https://github.com/Fromont-Sam/SpaceGO/blob/master/doc/screenshot7.PNG?raw=true)](https://goo.gl/W292Zk)
+## 설정
 
-You'll need SFML to build and run this project. For more information, go to the official [SFML website and follow the instructions](https://www.sfml-dev.org/).
+### SFML 설정
 
-Once you've installed SFML you can clone this project and build it with CMake. 
+ - SFML 윈도우즈 및 Visual Studio 용을 다운로드 한다.
+ 
+   - https://www.sfml-dev.org/
+   
+   - 현재 Visual Studio 2019 
+   
+      * https://artifacts.sfml-dev.org/by-branch/master/windows-vc16-64.zip
+   
+   - 참조
+   
+   * Visual C++ 12 : Visual C++ 2013
+   * Visual C++ 14 : Visual C++ 2015
+   * Visual C++ 15 : Visual C++ 2017
+   * Visual C++ 19 : Visual C++ 2019
+    
+ - 다음과 같이 환경설정 값을 '시스템 환경 변수 편집'에 입력한다.
+ 
+   * 변수명 : SFML_ROOT 
+   * 값 : D:\SFML (예제)
 
-Tutorial using CMake here : https://www.youtube.com/watch?v=Q7dRfr5sSQc
+### 프로젝트 설정
 
-I made all components by myself (buttons, checkbox, etc...). I'd be happy to see you using them in your own projects, if you want to. Don't hesitate and tell me about it! :D
-
-# Social medias 
-
-- Twitter : https://twitter.com/Fromont_Sam
-- LinkedIn : https://www.linkedin.com/in/fromont-sam/
-- YouTube : https://www.youtube.com/channel/UC6-lC8FAfAW_rlPZu4qCYvg
-
-# Panels presentation
-There is no panel in SFML but I keep speaking about panels when I create views with every kind of technologies. That's because my first GUIs were made with Java Swing, so don't pay attention to that. :) 
-
-## Menu panel
-This panel doesn't contain a lot of things but it links every other panels so that's the most important view of the game.
-
-![alt text](https://github.com/Fromont-Sam/SpaceGO/blob/master/doc/screenshot1.PNG?raw=true)
-
-## Game panel
-Second most important panel, the game panel! I don't think I need to say more ^.^
-
-![alt text](https://github.com/Fromont-Sam/SpaceGO/blob/master/doc/screenshot2.PNG?raw=true)
-
-## Shop panel
-This panel allows you to buy new spaceships models and colors. You earn stars by playing the game and you can spend these starts to use the shop.
-
-![alt text](https://github.com/Fromont-Sam/SpaceGO/blob/master/doc/screenshot3.PNG?raw=true)
-
-## Score panel
-Just a simple score history to challenge your friends!
-
-![alt text](https://github.com/Fromont-Sam/SpaceGO/blob/master/doc/screenshot4.PNG?raw=true)
+ - *.sln 로딩 및 빌드
+ 
 
 
-## Account panel
-That's where you can choose your spaceships model and your color, you can also see some details like your stars and your level.
-
-![alt text](https://github.com/Fromont-Sam/SpaceGO/blob/master/doc/screenshot5.PNG?raw=true)
 
 
-## Settings panel
-Some usual settings to ensure a positive game experience.
 
-![alt text](https://github.com/Fromont-Sam/SpaceGO/blob/master/doc/screenshot6.PNG?raw=true)
+
+
