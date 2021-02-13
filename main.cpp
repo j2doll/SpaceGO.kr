@@ -3,7 +3,6 @@
 #include <iostream>
 #include <thread>
 
-
 #include <SFML/Graphics.hpp>
 #include <SFML/Audio.hpp>
 
@@ -19,13 +18,14 @@
 
 // #include <Windows.h>
 
-
 #pragma warning (disable : 4244)
 #pragma warning (disable : 4305)
 #pragma warning (disable : 4018)
 
 int main()
 {
+	using namespace sf;
+
 	//Window variables
 	int ticks = 0;
 	// ::FreeConsole(); //Hide console
@@ -62,13 +62,16 @@ int main()
 	while (window.isOpen())
 	{
 		sf::Event event;
+
 		if (window.getConfig()->isMusicOn()) {
 			music.setVolume(window.getConfig()->getVolume());
 		}
 		else {
 			music.setVolume(0);
 		}
+
 		window.setVerticalSyncEnabled(window.getConfig()->isVsyncOn());
+
 		//Event manager
 		while (window.pollEvent(event))
 		{
@@ -78,16 +81,19 @@ int main()
 				window.getConfig()->save();
 				window.close();
 				break;
+
 			case sf::Event::KeyPressed:
-				if (panels[activePanel]->keyPressedOnce(event.key.code)!=-1) {
+				if (panels[activePanel]->keyPressedOnce(event.key.code) != -1) {
 					activePanel = panels[activePanel]->keyPressedOnce(event.key.code);
 				}
 				break;
+
 			case sf::Event::MouseButtonPressed:
 				if (panels[activePanel]->mouseClicked(event.mouseButton.x, event.mouseButton.y, event.mouseButton.button) >= 0) {
 					activePanel = panels[activePanel]->mouseClicked(event.mouseButton.x, event.mouseButton.y, event.mouseButton.button);
 				}
 				break;
+
 			case sf::Event::MouseMoved:
 				if (panels[activePanel]->mouseMove(event.mouseMove.x, event.mouseMove.y) >= 0) {
 					activePanel = panels[activePanel]->mouseMove(event.mouseMove.x, event.mouseMove.y);
@@ -95,8 +101,10 @@ int main()
 				break;
 			}
 		}
+
 		//Background animation
 		panels[activePanel]->moveBackground();
+
 		if (panels[activePanel]->getType() == Panel::PANEL_SPLASHSCREEN) {
 			ticks++;
 			if (ticks >= 30) {
@@ -106,21 +114,27 @@ int main()
 		}
 
 		//Keys manager
+
 		if (sf::Keyboard::isKeyPressed(sf::Keyboard::Z)) {
 			panels[activePanel]->keyPressed(sf::Keyboard::Z);
 		}
+
 		if (sf::Keyboard::isKeyPressed(sf::Keyboard::S)) {
 			panels[activePanel]->keyPressed(sf::Keyboard::S);
 		}
+
 		if (sf::Keyboard::isKeyPressed(sf::Keyboard::Q)) {
 			panels[activePanel]->keyPressed(sf::Keyboard::Q);
 		}
+
 		if (sf::Keyboard::isKeyPressed(sf::Keyboard::D)) {
 			panels[activePanel]->keyPressed(sf::Keyboard::D);
 		}
+
 		if (sf::Keyboard::isKeyPressed(sf::Keyboard::Space)) {
 			panels[activePanel]->keyPressed(sf::Keyboard::Space);
 		}
+
 		if (sf::Keyboard::isKeyPressed(sf::Keyboard::R)) {
 			panels[activePanel]->keyPressed(sf::Keyboard::R);
 		}

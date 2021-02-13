@@ -9,7 +9,9 @@
 #include "Ennemy.h"
 #include "MyButton.h"
 #include "Spaceship.h"
+
 #pragma once
+
 class Game : public Panel
 {
 private:
@@ -36,6 +38,7 @@ public:
 	void restart();
 	void manageShoots();
 	void manageObstacles();
+
 	//Listeners
 	int keyPressed(int key);
 	int keyPressedOnce(sf::Keyboard::Key key);

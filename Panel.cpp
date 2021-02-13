@@ -1,7 +1,5 @@
 #include "Panel.h"
 
-
-
 Panel::Panel(MyWindow* window)
 {
 	mainWindow = window;
